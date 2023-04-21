@@ -1,68 +1,61 @@
 package com.example.jobagency;
+
+
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+// This class represents a list of job postings.
+public class JobList {
 
-public class JobList<Job>{
-    public static JobList[] getjobList;
-    public static ArrayList<String>jobList;
-    private String name;
-    private Object relevantSkills;
+    private ArrayList<Job> jobList;// list of jobs
 
-    public JobList(String title, Double salary, String description, String category, String location, String startDate, String endDate){
-        jobList= new ArrayList<>();
+    // Constructor for the JobList class. Initializes the job list.
+    public JobList() {
+        this.jobList = new ArrayList<>();
     }
-    public static void addJob(String job){
-        jobList.add(job);
-        System.out.println(jobList);
+    // Adds a job posting to the job list.
+    public  void  addToJobList(Job j) {
+        jobList.add(j);
     }
-    public static ArrayList<String> findJob(String title) {
-        return jobList;
+    // Returns the total number of job postings in the job list.
+    public int getTotal() {
+        return jobList.size();
     }
+    // Returns whether or not the job list is empty.
+    public boolean isEmpty()
+    {
+        return jobList.isEmpty();
+    }
+    // Returns the job posting at the specified index in the job list.
+    public Job getJob(int i) {
+         return jobList.get(i);
+    }
+    // Removes a job posting from the job list.
+    public void removeJob(Job j) {jobList.remove(j);}
 
-    public static JobList fromString(String line) {
-        String[] split = line.split(",");
-        return new JobList(split[0], Double.parseDouble(split[1]), split[2], split[3], split[4], split[5], split[6]);
-    }
-
-    public static void addJob(JobList job) {
-        jobList.add(String.valueOf(job));
-        System.out.println(jobList);
-    }
-
-    public ArrayList<String> getJobList(){
-        return jobList;
-    }
-    public void editJobList(ArrayList<String> jobList){
-        JobList.jobList =jobList;
-        System.out.println(jobList);
-    }
-    public void removeJob(String job){
-        jobList.remove(job);
-        System.out.println(jobList);
-    }
-
-    @Override
-    public String toString() {
-        return "JobList{" + "jobList=" + jobList +
-                ", name='" + name + '\'' +  ", relevantSkills=" + relevantSkills + '}';
+    public JobSeeker jobSeekerName(String jobSeeekerName) {
+        for (Job job : jobList) {
+            for (JobSeeker candidate : job.getCandidates()) {
+                if (candidate.getjobSeeekerName().equals(jobSeeekerName)) {
+                    return candidate;
+                }
+            }
+        }
+        return null;
     }
 
-    public Object getRelevantSkills() {
-        return relevantSkills;
+
+    public Job getJobById(String jobId) {
+        for (int i = 0; i < jobList.size(); i++) {
+            if (String.valueOf(jobList.get(i).getJobId()).equals(jobId)) {
+                return jobList.get(i);
+            }
+        }
+        return null;
     }
 
-    public void setRelevantSkills(Object relevantSkills) {
-        this.relevantSkills = relevantSkills;
-    }
 
-    public void addEmployee(Employee employee) {
-        relevantSkills.equals(employee);
+    public int Total() {
+        return jobList.size();
     }
-
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-
 }

@@ -1,5 +1,6 @@
 package com.example.jobagency;
 
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
