@@ -13,7 +13,7 @@ public class Mainmenu {
         JobList jobList = new JobList();
         JobSeekerList jobSeekerList = new JobSeekerList();
 
-        // read in jobs and job seekers from file
+        // read in jobs and jobSeekers from file
         FileHandler.readJobs(jobList);
         FileHandler.readJobSeekers(jobSeekerList);
 
@@ -23,7 +23,7 @@ public class Mainmenu {
                 // display menu options to user
                 System.out.println();
                 System.out.println("-------------------------------------------------------------");
-                System.out.println("                     Welcome to JobSeeker Agency             ");
+                System.out.println("                 Welcome to JobSeeker Agency                 ");
                 System.out.println("-------------------------------------------------------------");
                 System.out.println("[1.] Add Job");
                 System.out.println("[2.] Remove Job");
@@ -53,7 +53,7 @@ public class Mainmenu {
                         displayJobs(jobList); // display all jobs in the JobList object
                         break;
                     case "4":
-                        addJobSeeker(jobSeekerList); // add a new job seeker to the JobSeekerList object
+                        addJobSeeker(jobSeekerList); // add a new jobSeekers to the JobSeekerList object
                         break;
                     case "5":
                         removeFromJobSeekerList(jobSeekerList); // remove a job seeker from the JobSeekerList object
@@ -62,16 +62,16 @@ public class Mainmenu {
                         displayJobSeekers(jobSeekerList);// display all job seekers in the JobSeekerList object
                         break;
                     case "7":
-                        displayMatchingJobs(jobList, jobSeekerList);   // display all jobs in the JobList object that match the skills of a job seeker
+                        displayMatchingJobs(jobList, jobSeekerList);   // display all jobs in the JobList object that match the skills of a jobSeekers
                         break;
                     case "8":
-                        displayMatchingLocation(jobList, jobSeekerList);// display all jobs in the JobList object that match the location of a job seeker
+                        displayMatchingLocation(jobList, jobSeekerList);// display all jobs in the JobList object that match the location of a jobSeekers
                         break;
                     case "9":
                         displayJobCandidates(jobList, jobId); // display all job candidates who applied for a job
                         break;
                     case "10":
-                        saveJobListToFile(jobList, jobSeekerList); // save job and job seeker lists to file and quit program
+                        saveJobListToFile(jobList, jobSeekerList); // save job and jobSeekers lists to file and quit program
                         break;
                     default:
                         System.out.println("Enter 1-10 only");
@@ -109,10 +109,10 @@ public class Mainmenu {
 
 
     /**
-     * Displays a list of jobs where job skills match with job seeker's skills
+     * Displays a list of jobs where job skills match with jobSeekers's skills
      *
      * @param jobList The list of available jobs
-     * @param jobSeekerList The list of job seekers
+     * @param jobSeekerList The list of jobSeekers
      */
     private static void displayMatchingJobs(JobList jobList, JobSeekerList jobSeekerList) {
         System.out.println("LIST OF JOBS WHERE JOB SKILL MATCHES WITH JOB SEEKER'S SKILL:");
@@ -146,10 +146,10 @@ public class Mainmenu {
         System.out.println("-----------------------------------------------------------------------------------------------------");
     }
     /**
-     * Displays a list of jobs where job locattion match with job seeker's location
+     * Displays a list of jobs where job locattion match with jobSeekers's location
      *
      * @param jobList The list of available jobs
-     * @param jobSeekerList The list of job seekers
+     * @param jobSeekerList The list of jobSeekers
      */
     private static void displayMatchingLocation(JobList jobList, JobSeekerList jobSeekerList) {
 
@@ -185,8 +185,7 @@ public class Mainmenu {
         boolean keepAdding = true;
 
         while (keepAdding) {
-//            System.out.println("Enter Job Seeker ID : e.g enter max 10 digit number ");
-//            int id = EasyScanner.nextInt();
+
             int id = jobSeekerList.getJobSeekerList().size() + 1;
             System.out.println("Enter name: ");
             String name = EasyScanner.nextString();
@@ -386,8 +385,7 @@ public class Mainmenu {
                 System.out.print("Enter the job Id: ");
                 String jobId = EasyScanner.nextString();
                 try {
-////                    Job job = jobList.getJob(Integer.parseInt(jobId));
-//                    int jobIdInt = Integer.parseInt(jobId);
+
                     Job job = jobList.getJobById(jobId);
                     if (job == null) {
                         System.out.println("Job not found.");

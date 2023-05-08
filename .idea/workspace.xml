@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99a2c48d-711f-4c24-82f8-0d5d2247a094" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/EasyScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/JobSeeker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/JobSeekerList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jobagency/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jobagency/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/FileHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jobagency/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jobagency/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jobagency/JobList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/JobList.java" afterDir="false" />
+    <list default="true" id="99a2c48d-711f-4c24-82f8-0d5d2247a094" name="Changes" comment="So I implemented this program I have now display Matching Job method, Matching Job location method,add Job method, add Job Seeker method, now Job Seeker can applied for jobs by giving an existing JobId and finally a method to display Job candidates">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jobagency/Mainmenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/jobagency/Mainmenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jobagency/Recruiter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/jobagency/SearchJob.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +22,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="131a6fa4-37fb-4de8-bfbe-0979f97f7a0a" />
+        <option name="url" value="https://github.com/AndJean/jobAgency.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -80,6 +77,29 @@
       <option name="presentableId" value="Default" />
       <updated>1681670260382</updated>
     </task>
+    <task id="LOCAL-00001" summary="So I implemented this program I have now display Matching Job method, Matching Job location method,add Job method, add Job Seeker method, now Job Seeker can applied for jobs by giving an existing JobId and finally a method to display Job candidates">
+      <created>1682116655571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682116655571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="So I implemented this program I have now display Matching Job method, Matching Job location method,add Job method, add Job Seeker method, now Job Seeker can applied for jobs by giving an existing JobId and finally a method to display Job candidates" />
+    <option name="LAST_COMMIT_MESSAGE" value="So I implemented this program I have now display Matching Job method, Matching Job location method,add Job method, add Job Seeker method, now Job Seeker can applied for jobs by giving an existing JobId and finally a method to display Job candidates" />
   </component>
 </project>
